@@ -1,34 +1,9 @@
-<!--<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Pensando em Você 💖</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #fce4ec;
-      color: #880e4f;
-    }
-    img {
-      width: 250px;
-      margin: 10px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-  </style>
-</head>
-<body>
-  <h1 id="contador"></h1>
-  <div>
-    <img src="images/photo1.jpg" alt="Foto 1">
-    <img src="images/foto2.jpg" alt="Foto 2">
-    <img src="images/foto3.jpg" alt="Foto 3">
-  </div>-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -51,6 +26,7 @@
             color: #444;
             font-size: 2rem;
             letter-spacing: 0.01em;
+            font-family: 'Dancing Script', cursive, Arial, sans-serif;
         }
 
         .grid {
@@ -162,7 +138,10 @@
             <div class="img3"><img src="images/foto3.jpg" alt="Destino 3"></div>
             <div class="img4"><img src="images/foto4.jpg" alt="Destino 4"></div>
             <div class="texto">
-                Aqui adicionar um poema incrível que só o senhorito Igor consegue fazer.
+                Se meus olhos fossem só pra olhar nos teus
+                Se minha boca fosse só pra beijar a tua
+                Se meus dedos fossem só pra tocar teu corpo
+                Eu faria esse acordo.
             </div>
             <div class="img5"><img src="images/foto5.jpg" alt="Destino 5"></div>
             <div class="img6"><img src="images/foto6.jpg" alt="Destino 6"></div>
@@ -173,13 +152,15 @@
 
 
 <script>
-    const inicio = new Date("2025-07-25"); // data inicial
+    const inicio = new Date(2025, 6, 25); // data inicial
     const hoje = new Date();
 
     // Calcula anos, meses e dias
     let anos = hoje.getFullYear() - inicio.getFullYear();
     let meses = hoje.getMonth() - inicio.getMonth();
     let dias = hoje.getDate() - inicio.getDate();
+
+    console.log();
 
     if (dias < 0) {
         meses -= 1;
